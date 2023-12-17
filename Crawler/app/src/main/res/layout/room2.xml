@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ss1"
+        android:scaleType="fitXY"
+        android:contentDescription="Background Image" />
+
+    <TextView
+        android:id="@+id/scoreTextViewRoom2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score: 100"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/roomNameRoom2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Room 2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/playerNameRoom2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player Name"
+        android:layout_below="@id/roomNameRoom2"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/difficultyRoom2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Difficulty"
+        android:layout_below="@id/playerNameRoom2"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp" />
+
+    <ImageView
+        android:id="@+id/spriteRoom2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/difficultyRoom2"
+        android:layout_centerHorizontal="false"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/description_character_sprite" />
+
+    <Button
+        android:id="@+id/upButton"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:text="^\n|"
+        android:layout_marginLeft="270dp"
+        android:layout_marginTop="600dp"/>
+
+    <Button
+        android:id="@+id/leftButton"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:text="&lt;---"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="650dp"/>
+
+    <Button
+        android:id="@+id/rightButton"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:text="--&gt;"
+        android:layout_marginLeft="340dp"
+        android:layout_marginTop="650dp"/>
+
+    <Button
+        android:id="@+id/downButton"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:text="↓"
+        android:layout_marginLeft="270dp"
+        android:layout_marginTop="650dp"/>
+
+    <ImageView
+        android:id="@+id/enemy1ImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="170dp"
+        android:src="@drawable/enemy2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/enemy2ImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="403dp"
+        android:layout_marginEnd="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/enemy3" />
+
+    <!-- Fire Power-up 1 -->
+
+    <ImageView
+        android:id="@+id/firePowerUpImageView1"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/fire_powerup"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="200dp"
+        android:visibility="gone" />
+
+    <!-- Heart Power-up 1 -->
+    <ImageView
+        android:id="@+id/heartPowerUpImageView1"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/heart_powerup"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="380dp"
+        android:visibility="gone" />
+
+    <!-- Fire Power-up 2 -->
+    <ImageView
+        android:id="@+id/firePowerUpImageView2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/fire_powerup"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="200dp"
+        android:visibility="gone" />
+
+    <!-- Heart Power-up 2 -->
+    <ImageView
+        android:id="@+id/heartPowerUpImageView2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/heart_powerup"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="380dp"
+        android:visibility="gone" />
+
+
+    <ImageView
+        android:id="@+id/clubImageView"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/club"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="200dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/swordImageView"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/sword"
+        android:layout_marginStart="230dp"
+        android:layout_marginTop="480dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="visible" />
+
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="2dp"
+        android:text="HP: 1000"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</RelativeLayout>
